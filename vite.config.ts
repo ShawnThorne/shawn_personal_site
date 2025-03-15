@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import tailwindcss from "@tailwindcss/vite";
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,6 +12,14 @@ export default defineConfig({
     vue(),
     vueDevTools(),
     tailwindcss(),
+    ViteImageOptimizer({
+      jpeg:{
+        quality: 80
+      },
+      jpg:{
+        quality: 80
+      }
+    }),
   ],
   resolve: {
     alias: {
