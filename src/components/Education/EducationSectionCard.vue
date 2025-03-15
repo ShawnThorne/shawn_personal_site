@@ -1,5 +1,5 @@
 <template>
-  <div class="border-y-2 py-2 my-2">
+  <div class="border-t-1 py-2 my-2">
     <div class="text-xl font-bold">
       <slot name="title"></slot>
     </div>
