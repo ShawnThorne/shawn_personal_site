@@ -13,11 +13,7 @@
             <p>Learn a little more about me down below</p>
           </div>
           <div class="flex justify-center">
-            <img
-              class="rounded-lg max-h-100% w-auto"
-              src="../assets/imgs/Shawn-0752.jpg"
-              alt=""
-            />
+            <img class="rounded-lg max-h-100% w-auto" src="../assets/imgs/Shawn-0752.jpg" alt="" />
           </div>
         </div>
       </template>
