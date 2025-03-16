@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import EducationSectionCard from './EducationSectionCard.vue'
-import SectionTemplate from '../SectionTemplate.vue'
+import SectionTemplate from '../Templates/SectionTemplate.vue'
 </script>
 
 <template>

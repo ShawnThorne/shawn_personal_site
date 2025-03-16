@@ -22,5 +22,5 @@
 </template>
 
 <script setup lang="ts">
-import SectionTemplate from './SectionTemplate.vue'
+import SectionTemplate from './Templates/SectionTemplate.vue'
 </script>

@@ -86,7 +86,7 @@
 
 <script setup lang="ts">
 import EmploymentSection from './EmploymentSection.vue'
-import SectionTemplate from '../SectionTemplate.vue'
-import TechChip from '../TechChip.vue'
-import ProjectSection from '../ProjectSection.vue'
+import SectionTemplate from '../Templates/SectionTemplate.vue'
+import TechChip from '../Templates/TechChip.vue'
+import ProjectSection from '../Templates/ProjectSection.vue'
 </script>
