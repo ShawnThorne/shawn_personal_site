@@ -13,7 +13,7 @@
         and <span class="font-bold">DaisyUi</span>.
         <br />
         Deployed using self-hosted <span class="font-bold">Coolify</span> via
-        <span class="font-bold">AWS</span> services.
+        <span class="font-bold">Hostinger</span> services.
       </div>
     </div>
   </div>

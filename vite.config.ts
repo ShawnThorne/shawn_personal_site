@@ -14,10 +14,10 @@ export default defineConfig({
     tailwindcss(),
     ViteImageOptimizer({
       jpeg:{
-        quality: 80
+        quality: 70
       },
       jpg:{
-        quality: 80
+        quality: 70
       }
     }),
   ],

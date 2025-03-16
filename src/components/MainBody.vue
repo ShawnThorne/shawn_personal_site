@@ -10,6 +10,7 @@ import EducationSection from './Education/EducationSection.vue'
 import ExperienceSection from './Employment/ExperienceSection.vue'
 import IntroSection from './IntroSection.vue'
 
+//Automatically shrinks titles as guests scroll up
 // document.addEventListener('scroll',()=>{
 //   const titles = document.getElementsByClassName('title');
 //   for (const title of titles) {
