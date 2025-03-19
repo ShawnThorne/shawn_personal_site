@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import EducationSectionCard from './EducationSectionCard.vue'
-import SectionTemplate from '../Templates/SectionTemplate.vue'
-</script>
-
 <template>
   <SectionTemplate>
     <template #title>Education</template>
@@ -11,37 +6,84 @@ import SectionTemplate from '../Templates/SectionTemplate.vue'
     <div> -->
     <template #content>
       <div>
-        I graduated from Utah State University with a bachelors in Computer Science. There I studied
-        a lot... and I mean a lot. Below you'll find some of the more notable elective classes I
-        took and some of the related projects that I completed there.
+        During my time at USU, I dove deep into the ever-evolving world of computer science,
+        mastering everything from complex algorithms to full-stack development. It was more than
+        just earning a degree—it was an adventure in problem-solving, collaboration, and pushing the
+        boundaries of what technology can achieve. I thrived on hands-on projects that challenged me
+        to innovate, and I built lasting connections with mentors and peers who shared my passion
+        for creating impactful solutions.
+        <br /><br />
+        Being an Aggie wasn’t just an identity—it shaped my relentless curiosity and drive to learn.
+        USU provided the perfect launchpad for my journey as a developer, and the experience
+        continues to inspire me to grow and contribute to the tech world. Here you’ll find some of
+        the more interesting electives I took along with some of their related projects.
       </div>
-      <div>
-        <EducationSectionCard>
-          <template #title> C++ Programming </template>
-          <template #subtitle> Data Structures and Algorithms </template>
-          <template #description>
-            This class was a deep dive into the C++ programming language. We learned about the
-            intricacies of the language and how to use it to create efficient and effective
-            programs.
-          </template>
-          <template #projects>
-            <div>
-              <div class="font-bold">Project 1</div>
-              <div>
-                This project was a simple program that took in a list of numbers and sorted them
-                using the bubble sort algorithm.
-              </div>
-            </div>
-            <div>
-              <div class="font-bold">Project 2</div>
-              <div>
-                This project was a simple program that took in a list of numbers and sorted them
-                using the quick sort algorithm.
-              </div>
-            </div>
-          </template>
-        </EducationSectionCard>
+      <div id="EducationClassesContainer" class="relative mt-4">
+        <div id="classesGroup" class="flex select-none overflow-x-auto no-scrollbar flex gap-4">
+          <ScientificVisualization />
+          <DataScienceInPractice />
+          <AppliedDeepLearning />
+          <IntroToMachineLearning />
+          <HighPerformanceComputing />
+          <CompilerConstruction />
+          <ModernWebDevelopment />
+        </div>
       </div>
     </template>
   </SectionTemplate>
 </template>
+
+<script setup lang="ts">
+import SectionTemplate from '../Templates/SectionTemplate.vue'
+import ScientificVisualization from './EducationClasses/ScientificVisualization.vue'
+import DataScienceInPractice from './EducationClasses/DataScienceInPractice.vue'
+import AppliedDeepLearning from './EducationClasses/AppliedDeepLearning.vue'
+import IntroToMachineLearning from './EducationClasses/IntroToMachineLearning.vue'
+import HighPerformanceComputing from './EducationClasses/HighPerformanceComputing.vue'
+import CompilerConstruction from './EducationClasses/CompilerConstruction.vue'
+import ModernWebDevelopment from './EducationClasses/ModernWebDevelopment.vue'
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const scrollContainer = document.getElementById('classesGroup');
+
+  let isDragging = false;
+  let startX: number;
+  let scrollLeft: number;
+
+  scrollContainer?.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+  });
+
+  scrollContainer?.addEventListener('mouseleave', () => {
+    isDragging = false;
+  });
+
+  scrollContainer?.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  scrollContainer?.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX);
+    scrollContainer.scrollLeft = scrollLeft - walk;
+  });
+})
+</script>
+
+<style scoped>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>
