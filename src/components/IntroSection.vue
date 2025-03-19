@@ -2,7 +2,6 @@
   <div id="introSection" class="grid grid-cols-1 gap-8">
     <SectionTemplate class="text-center">
       <template #title>About Me</template>
-      <template #subtitle>Programming extraordinare</template>
       <template #content>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
           <div class="flex flex-col justify-center items-center">

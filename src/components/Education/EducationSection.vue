@@ -19,7 +19,10 @@
         the more interesting electives I took along with some of their related projects.
       </div>
       <div id="EducationClassesContainer" class="relative mt-4">
-        <div id="classesGroup" class="flex select-none overflow-x-auto no-scrollbar flex gap-4">
+        <div
+          id="classesGroup"
+          class="flex select-none z-0 bg-base-100 overflow-x-auto no-scrollbar snap-x snap-mandatory lg:snap-none flex gap-4"
+        >
           <ScientificVisualization />
           <DataScienceInPractice />
           <AppliedDeepLearning />
@@ -42,48 +45,48 @@ import IntroToMachineLearning from './EducationClasses/IntroToMachineLearning.vu
 import HighPerformanceComputing from './EducationClasses/HighPerformanceComputing.vue'
 import CompilerConstruction from './EducationClasses/CompilerConstruction.vue'
 import ModernWebDevelopment from './EducationClasses/ModernWebDevelopment.vue'
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 
 onMounted(() => {
-  const scrollContainer = document.getElementById('classesGroup');
+  const scrollContainer = document.getElementById('classesGroup')
 
-  let isDragging = false;
-  let startX: number;
-  let scrollLeft: number;
+  let isDragging = false
+  let startX: number
+  let scrollLeft: number
 
   scrollContainer?.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.pageX - scrollContainer.offsetLeft;
-    scrollLeft = scrollContainer.scrollLeft;
-  });
+    isDragging = true
+    startX = e.pageX - scrollContainer.offsetLeft
+    scrollLeft = scrollContainer.scrollLeft
+  })
 
   scrollContainer?.addEventListener('mouseleave', () => {
-    isDragging = false;
-  });
+    isDragging = false
+  })
 
   scrollContainer?.addEventListener('mouseup', () => {
-    isDragging = false;
-  });
+    isDragging = false
+  })
 
   scrollContainer?.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX);
-    scrollContainer.scrollLeft = scrollLeft - walk;
-  });
+    if (!isDragging) return
+    e.preventDefault()
+    const x = e.pageX - scrollContainer.offsetLeft
+    const walk = x - startX
+    scrollContainer.scrollLeft = scrollLeft - walk
+  })
 })
 </script>
 
 <style scoped>
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 </style>
