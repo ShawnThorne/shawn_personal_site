@@ -3,8 +3,7 @@
     <template #title> Scientific Visualization </template>
     <template #subtitle> Spring 2024 </template>
     <template #description>
-      This class was a deep dive into the C++ programming language. We learned about the intricacies
-      of the language and how to use it to create efficient and effective programs.
+      This course introduces principles, methods and techniques for visual analysis of scientific data. I learned how to make effective visualization of scalar, vector and tensor field data using state-of-the-art techniques including those for surface and volume geometry representation.
     </template>
     <template #projects>
       <div>

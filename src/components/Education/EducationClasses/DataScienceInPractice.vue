@@ -3,8 +3,7 @@
     <template #title> Data Science In Practice </template>
     <template #subtitle> Spring 2024 </template>
     <template #description>
-      This class was a deep dive into the C++ programming language. We learned about the intricacies
-      of the language and how to use it to create efficient and effective programs.
+      This course is a practical, project-based introduction to production data science where I learned data science concepts and techniques in a very applied setting. I examined many, many different datasets and worked with them to accomplish different tasks of analysis as computer scientists and domain scientists work together to solve problems. Topics covered include bar charts, line charts, scatterplots, statistics, getting and cleaning data, k-nearest neighbors, Naive Bayes classifiers, linear regression, logistic regression, support vector machines, decision trees, and neural networks.
     </template>
     <template #projects>
       <div>

@@ -3,8 +3,7 @@
     <template #title> Conmpiler Construction </template>
     <template #subtitle> Spring 2024 </template>
     <template #description>
-      This class was a deep dive into the C++ programming language. We learned about the intricacies
-      of the language and how to use it to create efficient and effective programs.
+      This course is an introduction to key design principles and techniques for constructing compilers. The major goal of this course is to understand the components, algorithms, and theories behind compilers, including lexical analysis, syntax analysis, semantic analysis, intermediate code generation, target code generation, and some of the principles of optimization. Topics include lexical analysis, syntax analysis, semantic analysis, intermediate code generation, run-time environments, target code generation, and optimization.
     </template>
     <template #projects>
       <div>
