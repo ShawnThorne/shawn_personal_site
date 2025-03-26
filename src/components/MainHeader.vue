@@ -32,11 +32,11 @@
           >
             <span @click="scrollElement('experienceSection')">Work Experience</span>
           </li>
-          <li
+          <!-- <li
             class="border-2 px-2 py-1 rounded-xl cursor-pointer hover:bg-primary hover:border-0 font-bold hover:m-[2px] transition"
           >
             <span @click="scrollElement('personProjectSection')">Personal Projects</span>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
