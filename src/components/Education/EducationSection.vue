@@ -19,10 +19,7 @@
         the more interesting electives I took along with some of their related projects.
       </div>
       <div id="EducationClassesContainer" class="relative mt-4">
-        <div
-          id="classesGroup"
-          class="grid grid-cols-2 gap-4"
-        >
+        <div id="classesGroup" class="grid grid-cols-2 gap-4">
           <ScientificVisualization />
           <DataScienceInPractice />
           <AppliedDeepLearning />

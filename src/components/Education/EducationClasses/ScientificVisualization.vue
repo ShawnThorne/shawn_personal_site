@@ -3,7 +3,10 @@
     <template #title> Scientific Visualization </template>
     <template #subtitle> Spring 2024 </template>
     <template #description>
-      This course introduces principles, methods and techniques for visual analysis of scientific data. I learned how to make effective visualization of scalar, vector and tensor field data using state-of-the-art techniques including those for surface and volume geometry representation.
+      This course introduces principles, methods and techniques for visual analysis of scientific
+      data. I learned how to make effective visualization of scalar, vector and tensor field data
+      using state-of-the-art techniques including those for surface and volume geometry
+      representation.
     </template>
     <template #projects>
       <div>

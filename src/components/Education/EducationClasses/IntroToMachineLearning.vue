@@ -3,7 +3,10 @@
     <template #title> Intro To Machine Learning </template>
     <template #subtitle> Spring 2024 </template>
     <template #description>
-      This course offered a deep dive into the practical applications of machine learning. I learned how to effectively clean and preprocess data, extract and select impactful features, and apply both supervised and unsupervised machine learning techniques. I gained proficiency in using popular machine learning libraries, enhancing hands-on skills on solving real-world problems.
+      This course offered a deep dive into the practical applications of machine learning. I learned
+      how to effectively clean and preprocess data, extract and select impactful features, and apply
+      both supervised and unsupervised machine learning techniques. I gained proficiency in using
+      popular machine learning libraries, enhancing hands-on skills on solving real-world problems.
     </template>
     <template #projects>
       <div>
