@@ -14,40 +14,8 @@
               Full stack software developer working mainly in Vue, Laravel, Tailwind CSS, and Ionic
             </div>
             <div class="card static bg-base-200 my-2 p-4 shadow-md">
-              <ProjectSection>
-                <template #title>Women's Council of Realtors Utah</template>
-                <template #tech>
-                  <div class="flex justify-center gap-1">
-                    <TechChip>Vue</TechChip>
-                    <TechChip>Ionic</TechChip>
-                    <TechChip>Laravel</TechChip>
-                    <TechChip>Tailwind CSS</TechChip>
-                  </div>
-                </template>
-                <template #content>
-                  <div>
-                    Project that includes both a mobile app and a user facing backend to allow for
-                    managing the mobile application. The mobile application facilitates networking
-                    within the Women's Council Of Realtors as well as tracking event attendance and
-                    user interaction. The backend allows users to input upcoming events that can
-                    then be RSVP'd to from that same backend as well as managing partners and
-                    sponsors for both the app and events.
-                  </div>
-                </template>
-              </ProjectSection>
-              <ProjectSection>
-                <template #title>Assetlyst Property Management System</template>
-                <template #tech>
-                  <div class="flex justify-center gap-1">
-                    <TechChip>Vue</TechChip>
-                    <TechChip>Laravel</TechChip>
-                    <TechChip>Tailwind CSS</TechChip>
-                  </div>
-                </template>
-                <template #content>
-                  <div>Project 1 content</div>
-                </template>
-              </ProjectSection>
+              <WomensCouncilOfRealtors/>
+
               <ProjectSection>
                 <template #title>KrusTech Service App</template>
                 <template #tech>
@@ -89,4 +57,5 @@ import EmploymentSection from './EmploymentSection.vue'
 import SectionTemplate from '../Templates/SectionTemplate.vue'
 import TechChip from '../Templates/TechChip.vue'
 import ProjectSection from '../Templates/ProjectSection.vue'
+import WomensCouncilOfRealtors from './EmploymentProjects/WomensCouncilOfRealtors.vue'
 </script>

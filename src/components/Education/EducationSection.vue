@@ -21,7 +21,7 @@
       <div id="EducationClassesContainer" class="relative mt-4">
         <div
           id="classesGroup"
-          class="flex select-none z-0 bg-base-100 overflow-x-auto no-scrollbar snap-x snap-mandatory lg:snap-none flex gap-4"
+          class="grid grid-cols-2 gap-4"
         >
           <ScientificVisualization />
           <DataScienceInPractice />
