@@ -20,7 +20,7 @@
               <BundoSite />
               <AssetlystMain />
               <AssetlystPropertyManagement />
-              <Critterindy />
+              <CritterIndy />
               <CustomMatBoard />
             </div>
           </template>
@@ -38,7 +38,7 @@ import AssetlystPropertyManagement from './EmploymentProjects/AssetlystPropertyM
 import AmpedFuels from './EmploymentProjects/AmpedFuels.vue'
 import AssetlystMain from './EmploymentProjects/AssetlystMain.vue'
 import BundoSite from './EmploymentProjects/BundoSite.vue'
-import Critterindy from './EmploymentProjects/Critterindy.vue'
 import CustomMatBoard from './EmploymentProjects/CustomMatBoard.vue'
 import KrusTech from './EmploymentProjects/KrusTech.vue'
+import CritterIndy from './EmploymentProjects/CritterIndy.vue'
 </script>
