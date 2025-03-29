@@ -15,8 +15,13 @@
             </div>
             <div class="card static bg-base-200 my-2 p-4 shadow-md">
               <WomensCouncilOfRealtors />
-              <AssetlystPropertyManagement />
               <AmpedFuels />
+              <KrusTech />
+              <BundoSite />
+              <AssetlystMain />
+              <AssetlystPropertyManagement />
+              <Critterindy />
+              <CustomMatBoard />
             </div>
           </template>
         </EmploymentSection>
@@ -28,9 +33,12 @@
 <script setup lang="ts">
 import EmploymentSection from './EmploymentSection.vue'
 import SectionTemplate from '../Templates/SectionTemplate.vue'
-import TechChip from '../Templates/TechChip.vue'
-import ProjectSection from '../Templates/ProjectSection.vue'
 import WomensCouncilOfRealtors from './EmploymentProjects/WomensCouncilOfRealtors.vue'
 import AssetlystPropertyManagement from './EmploymentProjects/AssetlystPropertyManagement.vue'
 import AmpedFuels from './EmploymentProjects/AmpedFuels.vue'
+import AssetlystMain from './EmploymentProjects/AssetlystMain.vue'
+import BundoSite from './EmploymentProjects/BundoSite.vue'
+import Critterindy from './EmploymentProjects/Critterindy.vue'
+import CustomMatBoard from './EmploymentProjects/CustomMatBoard.vue'
+import KrusTech from './EmploymentProjects/KrusTech.vue'
 </script>

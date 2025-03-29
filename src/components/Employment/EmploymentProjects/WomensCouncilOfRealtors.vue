@@ -11,11 +11,13 @@
     </template>
     <template #content>
       <div>
-        Project that includes both a mobile app and a user facing backend to allow for managing the
-        mobile application. The mobile application facilitates networking within the Women's Council
-        Of Realtors as well as tracking event attendance and user interaction. The backend allows
-        users to input upcoming events that can then be RSVP'd to from that same backend as well as
-        managing partners and sponsors for both the app and events.
+        This project encompasses a mobile application and a user-facing backend designed to
+        streamline management and enhance user engagement. The mobile application facilitates
+        networking within the Women's Council of Realtors, enabling users to connect, track event
+        attendance, and monitor interactions. The backend provides robust tools for managing
+        upcoming events, allowing users to create and RSVP to events seamlessly. Additionally, it
+        supports the management of partners and sponsors for both the mobile app and events,
+        ensuring a comprehensive and efficient experience.
       </div>
     </template>
   </ProjectSection>
