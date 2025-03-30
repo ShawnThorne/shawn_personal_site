@@ -13,7 +13,9 @@
             <div>
               Full stack software developer working mainly in Vue, Laravel, Tailwind CSS, and Ionic
             </div>
-            <div class="card static bg-base-200 my-2 p-4 shadow-md">
+            <div
+              class="card static bg-base-200 my-2 p-4 shadow-lg! grid grid-cols-1 lg:grid-cols-3 gap-4"
+            >
               <WomensCouncilOfRealtors />
               <AmpedFuels />
               <KrusTech />

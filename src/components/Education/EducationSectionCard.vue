@@ -1,6 +1,6 @@
 <template>
   <div
-    class="educationClassCard relative z-0 snap-center p-4 text-left rounded-lg from-base-300 to-base-200 shadow bg-gradient-to-br"
+    class="educationClassCard relative z-0 snap-center p-4 text-left shadow-lg! rounded-lg from-base-300 to-base-200 bg-gradient-to-br"
   >
     <div class="text-xl font-bold">
       <slot name="title"></slot>
