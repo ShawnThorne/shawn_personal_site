@@ -1,2 +1,6 @@
 @import 'tailwindcss';
 @plugin "daisyui";
+
+.section-bg-gradient {
+  @apply bg-gradient-to-tr from-base-100 to-base-200 rounded-xl shadow-lg;
+}

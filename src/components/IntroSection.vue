@@ -3,7 +3,9 @@
     <SectionTemplate class="text-center">
       <template #title>About Me</template>
       <template #content>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 section-bg-gradient rounded shadow-xl p-12"
+        >
           <div class="flex flex-col justify-center items-center">
             <p class="lg:text-2xl">
               Hi, I’m Shawn Thorne, a passionate and innovative computer science graduate with two

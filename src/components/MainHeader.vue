@@ -1,37 +1,51 @@
 <template>
-  <div class="hero min-h-screen">
-    <div class="hero-content text-center">
-      <div>
-        <h1 class="text-6xl font-bold">
-          Hi there, I'm
-          <span class="transition-all ease-in-out font-normal hover:font-bold skew-46">Shawn</span>
-        </h1>
-        <p class="pt-2 text-center italic">
-          Taking ideas from <span class="font-bold">Inception</span> to
-          <span class="font-bold">Production</span>.
-        </p>
-        <ul class="menu-vertical mt-6 lg:menu-horizontal bg-base-200 rounded-box gap-4">
-          <li
-            class="border-2 px-2 py-1 rounded-xl cursor-pointer hover:bg-primary hover:border-0 font-bold hover:m-[2px] transition"
-          >
-            <span @click="scrollElement('body')">About</span>
-          </li>
-          <li
-            class="border-2 px-2 py-1 rounded-xl cursor-pointer hover:bg-primary hover:border-0 font-bold hover:m-[2px] transition"
-          >
-            <span @click="scrollElement('experienceSection')">Work Experience</span>
-          </li>
-          <li
-            class="border-2 px-2 py-1 rounded-xl cursor-pointer hover:bg-primary hover:border-0 font-bold hover:m-[2px] transition"
-          >
-            <span @click="scrollElement('educationSection')">Education</span>
-          </li>
-          <!-- <li
-            class="border-2 px-2 py-1 rounded-xl cursor-pointer hover:bg-primary hover:border-0 font-bold hover:m-[2px] transition"
-          >
-            <span @click="scrollElement('personProjectSection')">Personal Projects</span>
-          </li> -->
-        </ul>
+  <div class="min-h-screen">
+    <div class="text-center p-8 h-screen w-full">
+      <div class="flex bg-info-content h-full w-full text-white rounded-lg shadow-lg">
+        <div class="flex flex-grow justify-center gap-4 items-center flex-col w-full">
+          <div class="p-24">
+            <div class="font-bold text-5xl xl:text-9xl text-left flex">Hi there I'm Shawn</div>
+            <div class="flex gap-3 mt-4">
+              <div class="flex">
+                <div
+                  class="text-info-content flex text-xl font-bold bg-white rounded-full px-2 py-1"
+                >
+                  Web
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="text-info-content flex text-xl font-bold bg-white rounded-full px-2 py-1"
+                >
+                  Mobile
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="text-info-content flex text-xl font-bold bg-white rounded-full px-2 py-1"
+                >
+                  Design
+                </div>
+              </div>
+            </div>
+
+            <!-- menu -->
+            <div class="text-left mt-8 flex flex-col">
+              <div @click="scrollElement('introSection')" class="menuItem">About Me</div>
+              <div @click="scrollElement('experienceSection')" class="menuItem">
+                Work Experience
+              </div>
+              <div @click="scrollElement('educationSection')" class="menuItem">Education</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end items-center min-h-full h-auto w-full">
+          <img
+            class="rounded-lg max-h-full min-h-full h-auto w-auto object-cover"
+            src="../assets/imgs/Shawn-0752.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -45,3 +59,14 @@ function scrollElement(id: string) {
   }
 }
 </script>
+
+<style scoped>
+@reference 'tailwindcss';
+
+.menuItem {
+  @apply transition-all cursor-pointer mb-4;
+}
+.menuItem:hover {
+  @apply font-bold pl-4 border-l-2;
+}
+</style>
