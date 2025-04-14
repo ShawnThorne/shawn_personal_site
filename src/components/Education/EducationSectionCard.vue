@@ -11,9 +11,9 @@
     <div>
       <slot name="description"></slot>
     </div>
-    <div>
+    <!-- <div>
       <div class="font-bold text-lg">Notable Class Projects</div>
       <slot name="projects"></slot>
-    </div>
+    </div> -->
   </div>
 </template>

@@ -3,8 +3,12 @@
     <template #title> Special Topics: Applied Deep Learning </template>
     <template #subtitle> Spring 2024 </template>
     <template #description>
-      This class was a deep dive into the C++ programming language. We learned about the intricacies
-      of the language and how to use it to create efficient and effective programs.
+      This class was a deep dive into deep learning and related topics. I learned about the
+      fundamentals of deep learning, including neural networks, convolutional neural networks,
+      recurrent neural networks, and generative adversarial networks. I also learned about the
+      practical applications of deep learning, including image classification, natural language
+      processing, and reinforcement learning. The class was a mix of theory and practical
+      applications, with a focus on using deep learning frameworks such as TensorFlow and PyTorch.
     </template>
     <template #projects>
       <div>
