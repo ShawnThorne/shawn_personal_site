@@ -6,7 +6,7 @@
         <div
           class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 section-bg-gradient rounded shadow-xl p-12"
         >
-          <div class="flex flex-col justify-center items-center">
+          <div>
             <p class="lg:text-2xl text-left">
               Hi, I’m Shawn Thorne, a passionate and innovative computer science graduate with two
               years of hands-on experience as a full-stack software developer. I thrive at the

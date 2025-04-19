@@ -3,34 +3,34 @@
   <div class="min-h-screen">
     <div class="text-center p-8 h-screen w-full">
       <!-- Grid Layout -->
-      <div class="grid md:grid-cols-2 bg-animated h-full w-full text-white rounded-lg shadow-lg">
+      <div class="grid lg:grid-cols-2 bg-animated h-full w-full text-white rounded-lg shadow-lg">
         <!-- Left Section: Content -->
         <div class="flex flex-grow justify-center gap-4 items-center flex-col w-full">
           <!-- Introduction Section -->
-          <div class="p-4 md:p-24 !pb-0 max-w-full">
+          <div class="p-4 lg:p-24 !pb-0 max-w-full">
             <div class="font-bold text-5xl xl:text-9xl text-left flex">Hi there I'm Shawn</div>
             <div>
-              <div class="md:text-xl text-sm text-left mt-4 italic">
+              <div class="lg:text-xl text-sm text-left mt-4 italic">
                 Taking ideas from concept to reality
               </div>
             </div>
 
             <!-- Menu Section -->
-            <div class="text-center md:text-left mt-8 flex flex-col">
+            <div class="text-center lg:text-left mt-8 flex flex-col">
               <div>
-                <div @click="redirectTo('About')" class="menuItem">About Me</div>
+                <RouterLink to="/about" class="menuItem">About Me</RouterLink>
               </div>
               <div>
-                <div @click="redirectTo('Experience')" class="menuItem">Work Experience</div>
+                <RouterLink to="/experience" class="menuItem">Work Experience</RouterLink>
               </div>
               <div>
-                <div @click="redirectTo('Education')" class="menuItem">Education</div>
+                <RouterLink to="/education" class="menuItem">Education</RouterLink>
               </div>
             </div>
           </div>
 
           <!-- Footer Section -->
-          <div class="self-start hidden md:flex md:px-24 justify-start flex-col mt-4">
+          <div class="self-start text-sm hidden lg:flex lg:px-24 justify-start flex-col mt-4">
             <div class="text-left">
               Designed in
               <a target="_blank" href="https://www.figma.com/" class="font-bold link-hover">Figma</a
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Right Section: Image -->
-        <div class="hidden md:flex justify-end items-center min-h-full h-auto w-full">
+        <div class="hidden lg:flex justify-end items-center min-h-full h-auto w-full">
           <img
             class="rounded-lg max-h-full min-h-full h-auto w-auto object-cover"
             src="../assets/imgs/Shawn-0752.jpg"
@@ -71,17 +71,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-/* Script Section */
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-function redirectTo(id: string) {
-  router.push({ name: id })
-}
-</script>
-
 <style scoped>
 /* Tailwind CSS Reference */
 @reference 'tailwindcss';
@@ -92,16 +81,16 @@ function redirectTo(id: string) {
 }
 
 .menuItem:hover {
-  @apply md:font-bold md:px-4;
+  @apply lg:font-bold lg:px-4;
 }
 
 .menuItem:after {
   content: '';
-  @apply absolute bottom-0 left-0 h-[.15rem] bg-white rounded-full w-full md:w-[2rem] transition-all;
+  @apply absolute bottom-0 left-0 h-[.15rem] bg-white rounded-full w-full lg:w-[2rem] transition-all;
 }
 
 .menuItem:hover:after {
-  @apply md:w-full md:transition-all;
+  @apply lg:w-full lg:transition-all;
 }
 
 /* Animated Background */

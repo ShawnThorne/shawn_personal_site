@@ -1,23 +1,23 @@
 <template>
   <main class="relative">
-    <Transition appear name="simple-fade" mode="out-in">
+    <!-- <Transition appear name="simple-fade" mode="out-in"> -->
       <header v-if="route.name !== 'LandingPage'">
         <MainHeader />
       </header>
       <div v-else></div>
-    </Transition>
-    <RouterView v-slot="{ Component, route }">
-      <Transition appear name="fade-slide" mode="out-in">
-        <component :is="Component" :key="route.path" />
-      </Transition>
+    <!-- </Transition> -->
+    <RouterView v-slot="{ Component }">
+      <!-- <Transition name="fade-slide" mode="out-in"> -->
+        <component :is="Component" :key="route.fullPath"/>
+      <!-- </Transition> -->
     </RouterView>
   </main>
-  <Transition appear name="simple-fade" mode="out-in">
+  <!-- <Transition appear name="simple-fade" mode="out-in"> -->
     <footer v-if="route.name !== 'LandingPage'">
       <MainFooter />
     </footer>
     <div v-else></div>
-  </Transition>
+  <!-- </Transition> -->
 </template>
 
 <script setup lang="ts">
