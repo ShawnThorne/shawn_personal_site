@@ -34,14 +34,14 @@
 </template>
 
 <script setup lang="ts">
-import SectionTemplate from '../Templates/SectionTemplate.vue'
-import ScientificVisualization from './EducationClasses/ScientificVisualization.vue'
-import DataScienceInPractice from './EducationClasses/DataScienceInPractice.vue'
-import AppliedDeepLearning from './EducationClasses/AppliedDeepLearning.vue'
-import IntroToMachineLearning from './EducationClasses/IntroToMachineLearning.vue'
-import HighPerformanceComputing from './EducationClasses/HighPerformanceComputing.vue'
-import CompilerConstruction from './EducationClasses/CompilerConstruction.vue'
-import ModernWebDevelopment from './EducationClasses/ModernWebDevelopment.vue'
+import AppliedDeepLearning from '@/components/Education/EducationClasses/AppliedDeepLearning.vue'
+import CompilerConstruction from '@/components/Education/EducationClasses/CompilerConstruction.vue'
+import DataScienceInPractice from '@/components/Education/EducationClasses/DataScienceInPractice.vue'
+import HighPerformanceComputing from '@/components/Education/EducationClasses/HighPerformanceComputing.vue'
+import IntroToMachineLearning from '@/components/Education/EducationClasses/IntroToMachineLearning.vue'
+import ModernWebDevelopment from '@/components/Education/EducationClasses/ModernWebDevelopment.vue'
+import ScientificVisualization from '@/components/Education/EducationClasses/ScientificVisualization.vue'
+import SectionTemplate from '@/components/Templates/SectionTemplate.vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {

@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import EmploymentSection from '@/components/Employment/EmploymentSection.vue'
+import SectionTemplate from '@/components/Templates/SectionTemplate.vue'
+import WomensCouncilOfRealtors from '@/components/Employment/EmploymentProjects/WomensCouncilOfRealtors.vue'
+import AssetlystPropertyManagement from '@/components/Employment/EmploymentProjects/AssetlystPropertyManagement.vue'
+import AmpedFuels from '@/components/Employment/EmploymentProjects/AmpedFuels.vue'
+import AssetlystMain from '@/components/Employment/EmploymentProjects/AssetlystMain.vue'
+import BundoSite from '@/components/Employment/EmploymentProjects/BundoSite.vue'
+import CustomMatBoard from '@/components/Employment/EmploymentProjects/CustomMatBoard.vue'
+import KrusTech from '@/components/Employment/EmploymentProjects/KrusTech.vue'
+import CritterIndy from '@/components/Employment/EmploymentProjects/CritterIndy.vue'
+</script>
+
 <template>
   <SectionTemplate>
     <template #title>Experience</template>
@@ -31,16 +44,3 @@
     </template>
   </SectionTemplate>
 </template>
-
-<script setup lang="ts">
-import EmploymentSection from './EmploymentSection.vue'
-import SectionTemplate from '../Templates/SectionTemplate.vue'
-import WomensCouncilOfRealtors from './EmploymentProjects/WomensCouncilOfRealtors.vue'
-import AssetlystPropertyManagement from './EmploymentProjects/AssetlystPropertyManagement.vue'
-import AmpedFuels from './EmploymentProjects/AmpedFuels.vue'
-import AssetlystMain from './EmploymentProjects/AssetlystMain.vue'
-import BundoSite from './EmploymentProjects/BundoSite.vue'
-import CustomMatBoard from './EmploymentProjects/CustomMatBoard.vue'
-import KrusTech from './EmploymentProjects/KrusTech.vue'
-import CritterIndy from './EmploymentProjects/CritterIndy.vue'
-</script>

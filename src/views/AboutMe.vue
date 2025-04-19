@@ -37,5 +37,5 @@
 </template>
 
 <script setup lang="ts">
-import SectionTemplate from './Templates/SectionTemplate.vue'
+import SectionTemplate from '@/components/Templates/SectionTemplate.vue'
 </script>
