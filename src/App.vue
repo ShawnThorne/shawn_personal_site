@@ -1,19 +1,19 @@
 <template>
   <main class="relative">
     <!-- <Transition appear name="simple-fade" mode="out-in"> -->
-      <header v-if="route.name !== 'LandingPage'">
+      <header v-if="routeVar.name !== 'LandingPage'">
         <MainHeader />
       </header>
       <div v-else></div>
     <!-- </Transition> -->
-    <RouterView v-slot="{ Component }">
+    <RouterView v-slot="{ Component, route }">
       <!-- <Transition name="fade-slide" mode="out-in"> -->
-        <component :is="Component" :key="route.fullPath"/>
+        <component :is="Component" :key="route.name"/>
       <!-- </Transition> -->
     </RouterView>
   </main>
   <!-- <Transition appear name="simple-fade" mode="out-in"> -->
-    <footer v-if="route.name !== 'LandingPage'">
+    <footer v-if="routeVar.name !== 'LandingPage'">
       <MainFooter />
     </footer>
     <div v-else></div>
@@ -25,7 +25,7 @@ import MainHeader from './components/MainHeader.vue'
 import MainFooter from './components/MainFooter.vue'
 import { RouterView, useRoute } from 'vue-router'
 
-const route = useRoute()
+const routeVar = useRoute()
 </script>
 
 <style scoped>
@@ -55,9 +55,5 @@ const route = useRoute()
 
 .simple-fade-leave-to {
   opacity: 0;
-}
-
-main {
-  will-change: translateX, opacity;
 }
 </style>
