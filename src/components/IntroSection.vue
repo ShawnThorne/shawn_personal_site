@@ -7,7 +7,7 @@
           class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 section-bg-gradient rounded shadow-xl p-12"
         >
           <div class="flex flex-col justify-center items-center">
-            <p class="lg:text-2xl">
+            <p class="lg:text-2xl text-left">
               Hi, I’m Shawn Thorne, a passionate and innovative computer science graduate with two
               years of hands-on experience as a full-stack software developer. I thrive at the
               intersection of creativity and technology, designing and building user-friendly,
@@ -24,7 +24,11 @@
             </p>
           </div>
           <div class="flex justify-center">
-            <img class="rounded-lg max-h-100% w-auto" src="../assets/imgs/Shawn-0752.jpg" alt="" />
+            <img
+              class="rounded-lg max-h-100% w-auto"
+              src="../assets/imgs/Shawn_Climbing_Pinacle.jpg"
+              alt=""
+            />
           </div>
         </div>
       </template>
