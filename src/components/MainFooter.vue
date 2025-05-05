@@ -3,7 +3,7 @@
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 p-8">
       <div>
         <div class="text-3xl font-bold">Shawn Thorne</div>
-        <div class="font-bold">Web Developer</div>
+        <div class="font-bold">Full-Stack Software Developer</div>
         <div>
           <a class="link" target="_blank" href="https://github.com/ShawnThorne">Github Link</a>
         </div>

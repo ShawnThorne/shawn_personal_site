@@ -17,10 +17,9 @@
         attendance, and monitor interactions.
         <br />
         <br />
-        The backend provides robust tools for managing upcoming events, allowing users to create
-        and RSVP to events seamlessly. Additionally, it supports the management of partners and
-        sponsors for both the mobile app and events, ensuring a comprehensive and efficient
-        experience.
+        The backend provides robust tools for managing upcoming events, allowing users to create and
+        RSVP to events seamlessly. Additionally, it supports the management of partners and sponsors
+        for both the mobile app and events, ensuring a comprehensive and efficient experience.
       </div>
     </template>
   </ProjectSection>
