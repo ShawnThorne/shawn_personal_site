@@ -1,6 +1,6 @@
 <template>
   <div id="introSection" class="grid grid-cols-1 gap-8">
-    <SectionTemplate class="text-center">
+    <SectionTemplate>
       <template #title>About Me</template>
       <template #content>
         <div
@@ -26,7 +26,7 @@
           <div class="flex justify-center">
             <img
               class="rounded-lg max-h-100% w-auto"
-              src="../assets/imgs/Shawn_Climbing_Pinacle.jpg"
+              src="../assets/imgs/Shawn_Climbing_Pinacle_2.jpg"
               alt=""
             />
           </div>

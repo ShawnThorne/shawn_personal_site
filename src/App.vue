@@ -1,22 +1,22 @@
 <template>
   <main class="relative">
     <!-- <Transition appear name="simple-fade" mode="out-in"> -->
-      <header v-if="routeVar.name !== 'LandingPage'">
-        <MainHeader />
-      </header>
-      <div v-else></div>
+    <header v-if="routeVar.name !== 'LandingPage'">
+      <MainHeader />
+    </header>
+    <div v-else></div>
     <!-- </Transition> -->
     <RouterView v-slot="{ Component, route }">
       <!-- <Transition name="fade-slide" mode="out-in"> -->
-        <component :is="Component" :key="route.name"/>
+      <component :is="Component" :key="route.name" />
       <!-- </Transition> -->
     </RouterView>
   </main>
   <!-- <Transition appear name="simple-fade" mode="out-in"> -->
-    <footer v-if="routeVar.name !== 'LandingPage'">
-      <MainFooter />
-    </footer>
-    <div v-else></div>
+  <footer v-if="routeVar.name !== 'LandingPage'">
+    <MainFooter />
+  </footer>
+  <div v-else></div>
   <!-- </Transition> -->
 </template>
 

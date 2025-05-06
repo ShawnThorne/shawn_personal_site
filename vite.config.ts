@@ -12,6 +12,14 @@ export default defineConfig({
     vue(),
     vueDevTools(),
     tailwindcss(),
+    ViteImageOptimizer({
+      jpeg:{
+        quality: 70
+      },
+      jpg:{
+        quality: 70
+      }
+    }),
   ],
   resolve: {
     alias: {
